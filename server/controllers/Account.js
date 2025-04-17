@@ -8,8 +8,6 @@ console.log('Account from models:', Account); // Check what is being imported
 
 const loginPage = (req, res) => res.render('login');
 
-const signupPage = (req, res) => res.render('signup');
-
 const logout = (req, res) => {
   req.session.destroy();
   res.redirect('/');
@@ -64,7 +62,6 @@ const signup = async (req, res) => {
 
 module.exports = {
   loginPage,
-  signupPage,
   login,
   logout,
   signup,
